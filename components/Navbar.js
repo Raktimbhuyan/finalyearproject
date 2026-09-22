@@ -39,11 +39,10 @@ const Navbar = () => {
   return (
     <header className="sticky top-0 z-50 w-full px-3 pt-3 transition-all duration-300 sm:px-6 sm:pt-4">
       <nav
-        className={`mx-auto flex w-full max-w-7xl items-center justify-between rounded-full transition-all duration-300 ${
-          isScrolled
+        className={`mx-auto flex w-full max-w-7xl items-center justify-between rounded-full transition-all duration-300 ${isScrolled
             ? 'bg-white/15 backdrop-blur-xl shadow-2xl border border-white/20 px-4 py-2.5 sm:px-6'
             : 'bg-white/10 backdrop-blur-lg shadow-lg border border-white/15 px-4 py-3 sm:px-6 lg:px-8'
-        }`}
+          }`}
         aria-label="Main navigation"
       >
         <div className="flex items-center gap-8">
@@ -73,20 +72,20 @@ const Navbar = () => {
 
         <div className="hidden items-center gap-3 lg:flex">
           <Link href="/login">
-          <button
-            type="button"
-            className="rounded-full px-5 py-2.5 text-sm font-semibold text-neutral-200 transition-colors hover:bg-white/15 hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/50"
-          >
-            Log in
-          </button>
+            <button
+              type="button"
+              className="rounded-full px-5 py-2.5 text-sm font-semibold text-neutral-200 transition-colors hover:bg-white/15 hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/50"
+            >
+              Log in
+            </button>
           </Link>
           <Link href="/signup">
-          <button
-            type="button"
-            className="rounded-full bg-white px-5 py-2.5 text-sm font-semibold text-black shadow-lg transition-all hover:bg-neutral-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white"
-          >
-            Sign up free
-          </button>
+            <button
+              type="button"
+              className="rounded-full bg-white px-5 py-2.5 text-sm font-semibold text-black shadow-lg transition-all hover:bg-neutral-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white"
+            >
+              Sign up free
+            </button>
           </Link>
         </div>
 
@@ -132,18 +131,22 @@ const Navbar = () => {
             </div>
 
             <div className="mt-4 grid gap-2 border-t border-white/15 pt-4 sm:grid-cols-2">
-              <button
-                type="button"
-                className="w-full rounded-full bg-white/15 py-3 text-sm font-semibold text-white transition-colors hover:bg-white/25"
-              >
-                Log in
-              </button>
-              <button
-                type="button"
-                className="w-full rounded-full bg-white py-3 text-sm font-semibold text-black transition-colors hover:bg-neutral-200"
-              >
-                Sign up free
-              </button>
+              <Link href="/login">
+                <button
+                  type="button"
+                  className="w-full rounded-full bg-white/15 py-3 text-sm font-semibold text-white transition-colors hover:bg-white/25"
+                >
+                  Log in
+                </button>
+              </Link>
+              <Link href="/signup">
+                <button
+                  type="button"
+                  className="w-full rounded-full bg-white py-3 text-sm font-semibold text-black transition-colors hover:bg-neutral-200"
+                >
+                  Sign up free
+                </button>
+              </Link>
             </div>
           </div>
         </>

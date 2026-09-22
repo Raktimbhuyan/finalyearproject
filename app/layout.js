@@ -12,7 +12,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "CityPulse | AI Smart City & Emergency Response Platform",
+  title: "AIRES | AI Smart City & Emergency Response Platform",
   description:
     "A community-driven, AI-assisted platform for real-time emergency reporting and awareness.",
 };
