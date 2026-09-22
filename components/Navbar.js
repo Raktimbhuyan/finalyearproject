@@ -72,18 +72,22 @@ const Navbar = () => {
         </div>
 
         <div className="hidden items-center gap-3 lg:flex">
+          <Link href="/login">
           <button
             type="button"
             className="rounded-full px-5 py-2.5 text-sm font-semibold text-neutral-200 transition-colors hover:bg-white/15 hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/50"
           >
             Log in
           </button>
+          </Link>
+          <Link href="/signup">
           <button
             type="button"
             className="rounded-full bg-white px-5 py-2.5 text-sm font-semibold text-black shadow-lg transition-all hover:bg-neutral-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white"
           >
             Sign up free
           </button>
+          </Link>
         </div>
 
         <button

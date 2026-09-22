@@ -1,5 +1,6 @@
 'use client'
 import GhostFibers from "@/components/GhostFibers";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -48,16 +49,18 @@ export default function Home() {
               <span className="font-bold text-2xl">AIRES</span> is an AI-powered smart city app for real-time emergency reporting, nearby alerts, and incident tracking to help build safer communities.
             </p>
             <div className="w-full sm:w-auto flex flex-col sm:flex-row items-stretch sm:items-center justify-center lg:justify-start gap-3 sm:gap-4 pt-2 sm:pt-4">
-              <button className="w-full sm:w-auto min-h-12 px-6 sm:px-8 py-3.5 rounded-xl font-semibold text-sm sm:text-base text-white bg-indigo-600 hover:bg-indigo-500 active:scale-[0.98] transition-all duration-200 shadow-lg shadow-indigo-600/30 hover:shadow-indigo-500/50">
-                Get Started
-              </button>
+              <Link href="/dashboard">
+                <button className="w-full sm:w-auto min-h-12 px-6 sm:px-8 py-3.5 rounded-xl font-semibold text-sm sm:text-base text-white bg-indigo-600 hover:bg-indigo-500 active:scale-[0.98] transition-all duration-200 shadow-lg shadow-indigo-600/30 hover:shadow-indigo-500/50">
+                  Get Started
+                </button>
+              </Link>
             </div>
           </div>
           <div className="lg:col-span-5 relative w-full flex items-center justify-center mt-6 lg:mt-0">
             <div className="absolute -inset-2 sm:-inset-4 bg-linear-to-tr from-indigo-500/30 via-purple-500/20 to-pink-500/10 rounded-3xl blur-2xl sm:blur-3xl opacity-80 pointer-events-none" />
             <div className="relative w-full max-w-sm sm:max-w-md lg:max-w-none animate-float rounded-2xl border border-white/15 bg-slate-900/40 p-2.5 sm:p-4 backdrop-blur-xl shadow-2xl">
               <img
-                src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=1200&q=80"
+                src="/landingpage.jpeg"
                 alt="Dashboard Preview"
                 className="w-full h-auto aspect-4/3 sm:aspect-16/10 object-cover rounded-xl shadow-md"
                 loading="eager"
