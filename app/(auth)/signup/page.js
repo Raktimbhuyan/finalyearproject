@@ -193,7 +193,7 @@ const Signup = () => {
                   autoComplete={method === 'email' ? 'email' : 'tel'}
                   value={values.contact}
                   onChange={update('contact')}
-                  placeholder={method === 'email' ? 'you@example.com' : '+1 555 000 1234'}
+                  placeholder={method === 'email' ? 'you@example.com' : '+91 12345 00000'}
                   aria-invalid={!!errors.contact}
                   className="w-full bg-transparent py-3 text-sm text-white placeholder-white/30 outline-none"
                 />
